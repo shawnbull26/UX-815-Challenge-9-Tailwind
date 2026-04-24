@@ -1,19 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="screen.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <div class="flex items-center justify-center p-4">
+
+    <div class="flex flex-row items-center justify-between gap-6 px-4 py-2 w-full">
+
+      <!-- Popular Button -->
+      <button id="left-button"
+        class="bg-white text-black px-4 py-2 flex items-center gap-2 rounded-lg border border-gray-300 hover:bg-gray-100">
+        Popular
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+          <path fill-rule="evenodd"
+            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+
+      <!-- Middle buttons -->
+      <div class="flex items-center gap-2">
+        <button type="button"
+          class="bg-gray-100 text-heading box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-full text-sm px-4 py-2.5 focus:outline-none">Discover</button>
+        <button type="button"
+          class="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-full text-sm px-4 py-2.5 focus:outline-none">Animation</button>
+        <button type="button"
+          class="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-full text-sm px-4 py-2.5 focus:outline-none">Branding</button>
+        <button type="button"
+          class="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-full text-sm px-4 py-2.5 focus:outline-none">Illustration</button>
+        <button type="button"
+          class="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-full text-sm px-4 py-2.5 focus:outline-none">Mobile</button>
+        <button type="button"
+          class="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-full text-sm px-4 py-2.5 focus:outline-none">Print</button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+          <path fill-rule="evenodd"
+            d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+            clip-rule="evenodd" />
+        </svg>
+
+      </div>
+
+      <button id="right-button"
+        class="bg-white text-black px-4 py-2 flex items-center gap-2 rounded-xl border border-gray-300 hover:bg-gray-100">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+          <path
+            d="M10 3.75a2 2 0 1 0-4 0 2 2 0 0 0 4 0ZM17.25 4.5a.75.75 0 0 0 0-1.5h-5.5a.75.75 0 0 0 0 1.5h5.5ZM5 3.75a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5a.75.75 0 0 1 .75.75ZM4.25 17a.75.75 0 0 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5h1.5ZM17.25 17a.75.75 0 0 0 0-1.5h-5.5a.75.75 0 0 0 0 1.5h5.5ZM9 10a.75.75 0 0 1-.75.75h-5.5a.75.75 0 0 1 0-1.5h5.5A.75.75 0 0 1 9 10ZM17.25 10.75a.75.75 0 0 0 0-1.5h-1.5a.75.75 0 0 0 0 1.5h1.5ZM14 10a2 2 0 1 0-4 0 2 2 0 0 0 4 0ZM10 16.25a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z" />
+        </svg>
+        Filters
+      </button>
+
+
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="flex flex-col items-center justify-center gap-6 p-4">
+
+    <!-- Row 1 -->
+    <div class="flex flex-row items-end justify-center gap-6">
+      <div>
+        <img src="c1.png" alt="#" class="w-auto rounded-lg">
+
+        <div class="flex flex-row items-center justify-between p-4">
+
+          <div class="flex flex-row items-center gap-2">
+            <img src="c1.png" alt="#" class="size-6 rounded-full">
+            <p class="text-sm font-bold">Siege Media</p>
+          </div>
+
+          <div class="text-gray-500 flex items-center gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <path
+                d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
+            </svg>
+            <p class="text-sm font-bold">193</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+              <path fill-rule="evenodd"
+                d="M1.38 8.28a.87.87 0 0 1 0-.566 7.003 7.003 0 0 1 13.238.006.87.87 0 0 1 0 .566A7.003 7.003 0 0 1 1.379 8.28ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                clip-rule="evenodd" />
+            </svg>
+            <p class="text-sm font-bold">67.4k</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <img src="c2.png" alt="#" class="w-auto rounded-lg">
+
+        <div class="flex flex-row items-center justify-between p-4">
+
+          <div class="flex flex-row items-center gap-2">
+            <img src="c2.png" alt="#" class="size-6 rounded-full">
+            <p class="text-sm font-bold">Orman Clark</p>
+          </div>
+
+          <div class="text-gray-500 flex items-center gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <path
+                d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
+            </svg>
+            <p class="text-sm font-bold">98</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+              <path fill-rule="evenodd"
+                d="M1.38 8.28a.87.87 0 0 1 0-.566 7.003 7.003 0 0 1 13.238.006.87.87 0 0 1 0 .566A7.003 7.003 0 0 1 1.379 8.28ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                clip-rule="evenodd" />
+            </svg>
+            <p class="text-sm font-bold">24.2k</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <img src="c3.png" alt="#" class="w-auto rounded-lg">
+
+        <div class="flex flex-row items-center justify-between p-4">
+
+          <div class="flex flex-row items-center gap-2">
+            <img src="c3.png" alt="#" class="size-6 rounded-full">
+            <p class="text-sm font-bold">Jordan Cheung</p>
+          </div>
+
+          <div class="text-gray-500 flex items-center gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <path
+                d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
+            </svg>
+            <p class="text-sm font-bold">176</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+              <path fill-rule="evenodd"
+                d="M1.38 8.28a.87.87 0 0 1 0-.566 7.003 7.003 0 0 1 13.238.006.87.87 0 0 1 0 .566A7.003 7.003 0 0 1 1.379 8.28ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                clip-rule="evenodd" />
+            </svg>
+            <p class="text-sm font-bold">57.1k</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+     <!-- Row 1 -->
+    <div class="flex flex-row items-end justify-center gap-6">
+      <div>
+        <img src="c4.png" alt="#" class="w-auto rounded-lg">
+
+        <div class="flex flex-row items-center justify-between p-4">
+
+          <div class="flex flex-row items-center gap-2">
+            <img src="c4.png" alt="#" class="size-6 rounded-full">
+            <p class="text-sm font-bold">Aldo Crusher</p>
+          </div>
+
+          <div class="text-gray-500 flex items-center gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <path
+                d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
+            </svg>
+            <p class="text-sm font-bold">65</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+              <path fill-rule="evenodd"
+                d="M1.38 8.28a.87.87 0 0 1 0-.566 7.003 7.003 0 0 1 13.238.006.87.87 0 0 1 0 .566A7.003 7.003 0 0 1 1.379 8.28ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                clip-rule="evenodd" />
+            </svg>
+            <p class="text-sm font-bold">6.7k</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <img src="c5.png" alt="#" class="w-auto rounded-lg">
+
+        <div class="flex flex-row items-center justify-between p-4">
+
+          <div class="flex flex-row items-center gap-2">
+            <img src="c5.png" alt="#" class="size-6 rounded-full">
+            <p class="text-sm font-bold">Canto</p>
+          </div>
+
+          <div class="text-gray-500 flex items-center gap-1">
+            <p class="text-sm font-bold">Hide ads</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+              <path fill-rule="evenodd"
+                d="M1.38 8.28a.87.87 0 0 1 0-.566 7.003 7.003 0 0 1 13.238.006.87.87 0 0 1 0 .566A7.003 7.003 0 0 1 1.379 8.28ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                clip-rule="evenodd" />
+            </svg>
+            <p class="text-sm font-bold">Advertise</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <img src="c6.png" alt="#" class="w-auto rounded-lg">
+
+        <div class="flex flex-row items-center justify-between p-4">
+
+          <div class="flex flex-row items-center gap-2">
+            <img src="c6.png" alt="#" class="size-6 rounded-full">
+            <p class="text-sm font-bold">Ramy Wafaa</p>
+          </div>
+
+          <div class="text-gray-500 flex items-center gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <path
+                d="M2 6.342a3.375 3.375 0 0 1 6-2.088 3.375 3.375 0 0 1 5.997 2.26c-.063 2.134-1.618 3.76-2.955 4.784a14.437 14.437 0 0 1-2.676 1.61c-.02.01-.038.017-.05.022l-.014.006-.004.002h-.002a.75.75 0 0 1-.592.001h-.002l-.004-.003-.015-.006a5.528 5.528 0 0 1-.232-.107 14.395 14.395 0 0 1-2.535-1.557C3.564 10.22 1.999 8.558 1.999 6.38L2 6.342Z" />
+            </svg>
+            <p class="text-sm font-bold">513</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+              <path fill-rule="evenodd"
+                d="M1.38 8.28a.87.87 0 0 1 0-.566 7.003 7.003 0 0 1 13.238.006.87.87 0 0 1 0 .566A7.003 7.003 0 0 1 1.379 8.28ZM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                clip-rule="evenodd" />
+            </svg>
+            <p class="text-sm font-bold">143k</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
